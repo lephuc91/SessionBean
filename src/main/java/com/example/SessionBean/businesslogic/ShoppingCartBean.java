@@ -1,0 +1,42 @@
+package com.example.SessionBean.businesslogic;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.ejb.Remote;
+import javax.ejb.Remove;
+import javax.ejb.Stateful;
+import java.util.ArrayList;
+@Stateful(name = "ShoppingCart")
+public class ShoppingCartBean implements ShoppingCartLocal, ShoppingCart{
+    public ShoppingCartBean() {
+    }
+    public ArrayList cartItems;
+
+
+    public void addWineItem(String wine) {
+        cartItems.add(wine);
+    }
+    public void removeWineItem(String wine) {
+        cartItems.remove(wine);
+    }
+    public void setCartItems(ArrayList cartItems) {
+        this.cartItems = cartItems;
+    }
+    public ArrayList getCartItems() {
+        return cartItems;
+    }
+
+    @PostConstruct
+    public void initialize(){
+        cartItems = new ArrayList();
+    }
+    @PreDestroy
+    public void exit(){
+        System.out.println("Saved items list into database");
+    }
+
+    @Remove
+    public void stopSession(){
+        System.out.println("From stopSession method with @Remove annotation");
+    }
+}
