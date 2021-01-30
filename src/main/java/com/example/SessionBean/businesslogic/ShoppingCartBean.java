@@ -2,12 +2,11 @@ package com.example.SessionBean.businesslogic;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import javax.ejb.Remote;
 import javax.ejb.Remove;
 import javax.ejb.Stateful;
 import java.util.ArrayList;
 @Stateful(name = "ShoppingCart")
-public class ShoppingCartBean implements ShoppingCartLocal, ShoppingCart{
+public class ShoppingCartBean {
     public ShoppingCartBean() {
     }
     public ArrayList cartItems;

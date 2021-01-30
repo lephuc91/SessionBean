@@ -8,7 +8,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.interceptor.InvocationContext;
 
-@Stateless(name = "SearchFacade")
+@Stateless(name="SearchFacade")
 public class SearchFacadeBean implements SearchFacade, SearchFacadeLocal {
     public SearchFacadeBean() {
     }

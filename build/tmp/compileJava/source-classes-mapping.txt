@@ -1,11 +1,9 @@
 com/example/SessionBean/businesslogic/SearchFacadeLocal.java
  com.example.SessionBean.businesslogic.SearchFacadeLocal
-com/example/SessionBean/businesslogic/ShoppingCart.java
- com.example.SessionBean.businesslogic.ShoppingCart
-com/example/SessionBean/businesslogic/ShoppingCartLocal.java
- com.example.SessionBean.businesslogic.ShoppingCartLocal
 com/example/SessionBean/businesslogic/SearchFacadeBean.java
  com.example.SessionBean.businesslogic.SearchFacadeBean
+com/example/SessionBean/servlet/ShoppingCartClient.java
+ com.example.SessionBean.servlet.ShoppingCartClient
 com/example/SessionBean/businesslogic/ShopperCountBean.java
  com.example.SessionBean.businesslogic.ShopperCountBean
 com/example/SessionBean/businesslogic/ShoppingCartBean.java
@@ -14,5 +12,9 @@ com/example/SessionBean/HelloServlet.java
  com.example.SessionBean.HelloServlet
 com/example/SessionBean/businesslogic/LogShopperCountBean.java
  com.example.SessionBean.businesslogic.LogShopperCountBean
+com/example/SessionBean/servlet/ShopperCountClient.java
+ com.example.SessionBean.servlet.ShopperCountClient
 com/example/SessionBean/businesslogic/SearchFacade.java
  com.example.SessionBean.businesslogic.SearchFacade
+com/example/SessionBean/servlet/SearchFacadeClient.java
+ com.example.SessionBean.servlet.SearchFacadeClient
